@@ -40,12 +40,10 @@ public class Person2 {
         if (input == null) {
             return "";
         } else {
-
             ArrayList<Character> characters = new ArrayList<Character>();
             for (int i = 0; i < input.length(); i++) {
                 characters.add(input.charAt(i));
             }
-
             String output = "";
             Random rng = new Random();
             for (int i = 0; i < input.length(); i++) {
@@ -53,7 +51,6 @@ public class Person2 {
                 output += characters.get(j);
                 characters.remove(j);
             }
-
             return output;
         }
     }
